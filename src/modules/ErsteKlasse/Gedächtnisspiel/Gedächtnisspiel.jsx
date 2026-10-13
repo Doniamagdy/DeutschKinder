@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 
 import "./Gedächtnisspiel.css";
 
-import Pizza from "../../../assets/Pizza.png";
+import Pizza from "../../../assets/pizza.png";
 import Eis from "../../../assets/ice-cream.webp";
 import Schokolade from "../../../assets/chocholate.webp";
 import Brot from "../../../assets/bread.jpg";
