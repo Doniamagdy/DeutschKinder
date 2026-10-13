@@ -1,5 +1,6 @@
 import Logo from "../../../assets/animal.png"
 import Flag from "../../../assets/german-flag.png"
+import { Link } from "react-router";
 
 
 function Navbar() {
@@ -8,7 +9,7 @@ function Navbar() {
       <div className="mx-auto flex max-w-9xl items-center justify-between">
 
         {/* Logo */}
-        <a
+        <Link
          href="/"
           className="flex items-center gap-2 transition-transform duration-200 hover:scale-105"
         >
@@ -27,15 +28,15 @@ function Navbar() {
 
 
 
-        </a>
+        </Link>
 
 
-        <a href="/essen">Essen</a>
- <a href="/einkaufen">Einkaufen</a>
- <a href="/spielzeuge">Spielzeuge</a>
- <a href="/gedaechtnisspiel">Gedächtnisspiel</a>
-  <a href="/verstecktspiel">Verstecktspiel</a>
-       
+        <Link to="/essen">Essen</Link>
+        <Link to="/einkaufen">Einkaufen</Link>
+        <Link to="/spielzeuge">Spielzeuge</Link>
+        <Link to="/gedaechtnisspiel">Gedächtnisspiel</Link>
+        <Link to="/verstecktspiel">Verstecktspiel</Link>
+
 
         {/* Cute right-side illustration */}
         <div className="hidden h-14 w-14 items-center justify-center rounded-full sm:flex lg:h-16 lg:w-16 lg:text-4xl">
