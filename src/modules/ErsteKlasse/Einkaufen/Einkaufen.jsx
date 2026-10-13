@@ -6,7 +6,7 @@ import "./Einkaufen.css";
 import Jana from "../../../assets/cute-girl-cartoon-character-hand-drawn-doodle-style-isolated-white-background_1023984-30542.avif";
 import ShoppingCart from "../../../assets/shopping-cart-illustration_1496499-166.png";
 
-import Pizza from "../../../assets/Pizza.png";
+import Pizza from "../../../assets/izza.png";
 import Eis from "../../../assets/ice-cream.webp";
 import Schokolade from "../../../assets/chocholate.webp";
 import Brot from "../../../assets/bread.jpg";
