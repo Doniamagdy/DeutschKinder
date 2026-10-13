@@ -1,0 +1,87 @@
+.game-screen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+
+}
+
+/* الغلاف بنسبة ثابتة عشان المناطق متتزحزحش */
+.toy-room {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: min(100vw, calc(100vh * 16 / 9));
+}
+
+.toy-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+}
+
+/* =========================
+   Toy Hotspots
+========================= */
+
+.toy-hotspot {
+  position: absolute;
+
+  /* شيلي السطر ده بعد ما تظبطي الأماكن */
+  background: rgba(255, 0, 0, 0.25);
+
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 0;
+  cursor: pointer;
+  z-index: 20;
+  transition: 0.2s ease;
+}
+
+.toy-hotspot:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: white;
+  transform: scale(1.05);
+}
+
+/* =========================
+   Positions (عدّليهم على صورتك)
+========================= */
+
+.hase {
+  left: 5%;
+  top: 14%;
+  width: 8%;
+  height: 20%;
+}
+
+.igel {
+  left: 10%;
+  top: 48%;
+  width: 8%;
+  height: 20%;
+}
+
+.lama {
+  left: 35%;
+  top: 22%;
+  width: 10%;
+  height: 28%;
+}
+
+.esel {
+  left: 85%;
+  top: 19%;
+  width: 8%;
+  height: 20%;
+}
+
+.puma {
+  left: 80%;
+  top: 48%;
+  width: 8%;
+  height: 20%;
+}

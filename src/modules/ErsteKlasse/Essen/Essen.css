@@ -1,0 +1,305 @@
+```css
+/* =========================
+   Game Screen
+========================= */
+
+.game-screen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.kitchen-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  z-index: 0;
+}
+
+/* =========================
+   Refrigerator
+========================= */
+
+.fridge-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 25%;
+  height: 65%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* =========================
+   Food Hotspots
+========================= */
+
+.food-hotspot {
+  position: absolute;
+  background: rgba(255, 0, 0, 0.10);
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 0;
+  cursor: pointer;
+  z-index: 20;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+}
+
+.food-hotspot:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: white;
+  transform: scale(1.05);
+}
+
+.food-image {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  margin: auto;
+  pointer-events: none;
+}
+
+/* =========================
+   Laptop - Original Positions
+   769px and above
+========================= */
+
+.pizza {
+  left: 40%;
+  top: 40%;
+  width: 5%;
+  height: 10%;
+}
+
+.eis {
+  left: 40%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+}
+
+.kuchen {
+  left: 47%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+}
+
+.brot {
+  left: 54%;
+  top: 10%;
+  width: 5%;
+  height: 10%;
+}
+
+.kaese {
+  left: 41%;
+  top: 27%;
+  width: 5%;
+  height: 10%;
+}
+
+.schokolade {
+  left: 52%;
+  top: 27%;
+  width: 5%;
+  height: 10%;
+}
+
+.salat {
+  left: 54%;
+  top: 41%;
+  width: 5%;
+  height: 10%;
+}
+
+.joghurt {
+  left: 39.5%;
+  top: 59%;
+  width: 5%;
+  height: 10%;
+}
+
+/* =========================
+   Tablets & Small Laptops
+   481px - 768px
+========================= */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .fridge-button {
+    width: 32%;
+    height: 62%;
+  }
+
+  .pizza {
+    left: 37%;
+    top: 40%;
+    width: 7%;
+    height: 9%;
+  }
+
+  .eis {
+    left: 37%;
+    top: 12%;
+    width: 7%;
+    height: 9%;
+  }
+
+  .kuchen {
+    left: 45%;
+    top: 12%;
+    width: 7%;
+    height: 9%;
+  }
+
+  .brot {
+    left: 53%;
+    top: 12%;
+    width: 7%;
+    height: 9%;
+  }
+
+  .kaese {
+    left: 38%;
+    top: 28%;
+    width: 7%;
+    height: 9%;
+  }
+
+  .schokolade {
+    left: 51%;
+    top: 28%;
+    width: 7%;
+    height: 9%;
+  }
+
+  .salat {
+    left: 53%;
+    top: 41%;
+    width: 7%;
+    height: 9%;
+  }
+
+  .joghurt {
+    left: 36.5%;
+    top: 58%;
+    width: 7%;
+    height: 9%;
+  }
+}
+
+/* =========================
+   Mobile Phones
+   480px and below
+========================= */
+
+@media (max-width: 480px) {
+
+  .fridge-button {
+    width: 44%;
+    height: 58%;
+  }
+
+  .food-hotspot {
+    width: 9%;
+    height: 8%;
+    border-width: 1px;
+    border-radius: 6px;
+  }
+
+  .food-image {
+    width: 85%;
+    height: 85%;
+  }
+
+  .pizza {
+    left: 34%;
+    top: 40%;
+  }
+
+  .eis {
+    left: 34%;
+    top: 14%;
+  }
+
+  .kuchen {
+    left: 44%;
+    top: 14%;
+  }
+
+  .brot {
+    left: 54%;
+    top: 14%;
+  }
+
+  .kaese {
+    left: 35%;
+    top: 28%;
+  }
+
+  .schokolade {
+    left: 51%;
+    top: 28%;
+  }
+
+  .salat {
+    left: 54%;
+    top: 41%;
+  }
+
+  .joghurt {
+    left: 20%;
+    top: 58%;
+  }
+}
+
+/* =========================
+   Large Smart Boards
+   1440px and above
+========================= */
+
+@media (min-width: 1441px) {
+
+  .fridge-button {
+    width: 25%;
+    height: 65%;
+  }
+
+  .food-hotspot {
+    width: 4.5%;
+    height: 9%;
+  }
+}
+
+/* =========================
+   Touch Devices
+========================= */
+
+@media (hover: none) {
+  .food-hotspot:hover {
+    background: rgba(255, 0, 0, 0.10);
+    border-color: transparent;
+    transform: none;
+  }
+
+  .food-hotspot:active {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: white;
+  }
+}
+```

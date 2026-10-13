@@ -1,0 +1,334 @@
+.einkaufen {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Lilita One", sans-serif;
+}
+
+/* ========== HEADER ========== */
+
+.einkaufen-header {
+  height: 75px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f59e0b;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
+  z-index: 100;
+}
+
+.einkaufen-header h1 {
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.player-stars {
+  padding: 9px 20px;
+  background: white;
+  border-radius: 30px;
+  color: #f59e0b;
+  font-size: 22px;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* ========== SUPERMARKET ========== */
+
+.supermarket {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 75px);
+  min-height: 650px;
+  box-sizing: border-box;
+  padding: 120px 25px 0;
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+
+  background: linear-gradient(
+    to bottom,
+    #dff4ff 0%,
+    #dff4ff 55%,
+    #ead2a8 55%,
+    #d4ae7b 100%
+  );
+}
+
+/* ========== SIGN ========== */
+
+.supermarket-sign {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 11px 32px;
+  background: #fffdf5;
+  border: 5px solid #f59e0b;
+  border-radius: 18px;
+  color: #f59e0b;
+  font-size: 27px;
+  white-space: nowrap;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+  z-index: 60;
+}
+
+/* ========== SHOPPING LIST ========== */
+
+.shopping-list {
+  position: relative;
+  flex-shrink: 0;
+  width: 190px;
+  box-sizing: border-box;
+  padding: 25px 18px 18px;
+  background: #fffdf5;
+  border-radius: 10px;
+  transform: rotate(-2deg);
+  box-shadow:
+    0 7px 0 rgba(0, 0, 0, 0.08),
+    0 12px 20px rgba(0, 0, 0, 0.12);
+  z-index: 70;
+}
+
+.list-pin {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+}
+
+.shopping-list h2 {
+  margin: 3px 0 18px;
+  text-align: center;
+  color: #f59e0b;
+  font-size: 24px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  margin-bottom: 8px;
+  background: #fff5d6;
+  border-radius: 10px;
+  color: #7a4d2c;
+  font-size: 18px;
+}
+
+.list-item span:first-child {
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+.list-complete {
+  padding: 10px;
+  text-align: center;
+  background: #dcfce7;
+  border-radius: 12px;
+  color: #3f8f50;
+  font-size: 17px;
+}
+
+.list-progress {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 2px dashed #e2c98d;
+  text-align: center;
+  color: #f59e0b;
+  font-size: 17px;
+}
+
+/* ========== SHELVES ========== */
+
+.shelves {
+  display: flex;
+  gap: 40px;
+  z-index: 10;
+}
+
+.shelf {
+  width: 250px;
+  height: 340px;
+  box-sizing: border-box;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  background: #c98c55;
+  border: 7px solid #945f36;
+  border-radius: 14px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.shelf-level {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-bottom: 8px solid #754823;
+}
+
+.shelf-level:last-child {
+  border-bottom: none;
+}
+
+/* ========== PRODUCTS ========== */
+
+.product {
+  width: 78px;
+  height: 78px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.22));
+}
+
+.product:hover {
+  transform: scale(1.15) rotate(-3deg);
+}
+
+.product:active {
+  transform: scale(0.95);
+}
+
+/* ========== JANA + CART ========== */
+
+.bottom-area {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  z-index: 65;
+}
+
+.jana-character {
+  width: 140px;
+  filter: drop-shadow(0 7px 4px rgba(0, 0, 0, 0.18));
+}
+
+.jana-character img {
+  width: 100%;
+  display: block;
+}
+
+.shopping-cart {
+  position: relative;
+  width: 155px;
+  filter: drop-shadow(0 7px 4px rgba(0, 0, 0, 0.18));
+}
+
+.shopping-cart > img {
+  width: 100%;
+  display: block;
+}
+
+.cart-items {
+  position: absolute;
+  left: 25px;
+  bottom: 35px;
+  width: 105px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
+}
+
+.cart-items img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+/* ========== DECORATIONS ========== */
+
+.decoration {
+  position: absolute;
+  z-index: 4;
+  pointer-events: none;
+  font-size: 28px;
+  animation: floatStar 2.5s ease-in-out infinite;
+}
+
+.decoration-one {
+  top: 18%;
+  right: 3%;
+}
+
+.decoration-two {
+  bottom: 15%;
+  left: 12%;
+  animation-delay: 0.5s;
+}
+
+.decoration-three {
+  top: 20%;
+  left: 3%;
+  animation-delay: 1s;
+}
+
+@keyframes floatStar {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 1100px) {
+  .supermarket {
+    gap: 20px;
+  }
+
+  .shelves {
+    gap: 20px;
+  }
+
+  .shelf {
+    width: 190px;
+  }
+
+  .product {
+    width: 64px;
+    height: 64px;
+  }
+
+  .shopping-list {
+    width: 160px;
+  }
+}
+
+@media (max-width: 900px) {
+  .supermarket {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 190px;
+  }
+}
