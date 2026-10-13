@@ -1,6 +1,7 @@
 import Logo from "../../../assets/animal.png"
 import Flag from "../../../assets/german-flag.png"
 
+
 function Navbar() {
   return (
    <nav className="bg-[#fffff4] px-4 py-3 shadow-md sm:px-6 lg:px-10">
@@ -16,11 +17,24 @@ function Navbar() {
             <img src={Logo} alt="Logo" />
           </div>
 
-          <span className="text-lg font-extrabold text-white sm:text-xl lg:text-2xl">
+         
+
+          <span className="text-lg font-extrabold  sm:text-xl lg:text-2xl">
             Deutsch für Kinder
           </span>
+
+
+
+
+
         </a>
 
+
+        <a href="/essen">Essen</a>
+ <a href="/einkaufen">Einkaufen</a>
+ <a href="/spielzeuge">Spielzeuge</a>
+ <a href="/gedaechtnisspiel">Gedächtnisspiel</a>
+  <a href="/verstecktspiel">Verstecktspiel</a>
        
 
         {/* Cute right-side illustration */}
