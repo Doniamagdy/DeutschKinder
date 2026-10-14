@@ -9,6 +9,8 @@ import Gedächtnisspiel from "./modules/ErsteKlasse/Gedächtnisspiel/Gedächtnis
 import Spielzeuge from "./modules/ZweiteKlasse/Spielzeuge/Spielzeuge"
 import VerstecktSpiel from "./modules/ZweiteKlasse/VerstecktSpiel/VerstecktSpiel";
 
+import ErsteKlasseHome from "./modules/ErsteKlasseHome/ErsteKlasseHome";
+ import  ZweiteKlasseHome from "./modules/ZweiteKlasseHome/ZweiteKlasseHome";
 
 function App() {
   return (
@@ -21,6 +23,10 @@ function App() {
         <Route path="einkaufen" element={<Einkaufen />} />
         <Route path="gedaechtnisspiel" element={<Gedächtnisspiel />} />
         <Route path="verstecktspiel" element={<VerstecktSpiel />} />
+
+        <Route path="erste-klasse" element={<ErsteKlasseHome />} />
+
+        <Route path="zweite-klasse" element={<ZweiteKlasseHome />} />
 
       </Route>
     </Routes>

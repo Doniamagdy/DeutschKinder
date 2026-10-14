@@ -1,21 +1,22 @@
+import image1 from "../../assets/1.png"
+import image2 from "../../assets/2.png"
 
+import {Link} from "react-router-dom"
 function Home() {
     const lessons = [
   {
     title: "Erste Klasse 🎨",
-    description: "Lerne die Farben auf Deutsch!",
-    image:
-      "https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=800&q=80",
-    button: "Erste Klasse! 🚀",
+    image: image1,
+     
+    button: "Erste Klasse 🚀",
     link: "/erste-klasse",
   },
   {
     title: "Zweite Klasse 🐻",
-    description: "Entdecke tolle Tiere auf Deutsch!",
     image:
-      "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80",
-    button: "Tiere entdecken! 🐾",
-    link: "/tiere",
+  image2,
+    button: "Zweite Klasse 🐾",
+    link: "/zweite-klasse",
   },
 ];
   return (
@@ -67,17 +68,15 @@ function Home() {
                   {lesson.title}
                 </h3>
 
-                <p className="mt-3 text-base font-medium leading-relaxed text-gray-600 sm:text-lg">
-                  {lesson.description}
-                </p>
+               
 
                 {/* Button */}
-                <a
-                  href={lesson.link}
-                  className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-linear-to-r from-orange-400 to-pink-500 px-6 py-3.5 text-base font-extrabold text-white shadow-lg transition duration-300 hover:scale-105 hover:from-orange-500 hover:to-pink-600 focus:outline-none focus:ring-4 focus:ring-pink-200 sm:w-auto sm:min-w-[200px]"
+                <Link
+                  to={lesson.link}
+                  className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-red-400 px-6 py-3.5 text-base font-extrabold text-white shadow-lg transition duration-300 hover:scale-105 hover:from-orange-500 hover:to-pink-600 focus:outline-none focus:ring-4 focus:ring-pink-200 sm:w-auto sm:min-w-[200px]"
                 >
                   {lesson.button}
-                </a>
+                </Link>
               </div>
             </article>
           ))}

@@ -1,3 +1,4 @@
+
 .einkaufen {
   width: 100%;
   min-height: 100vh;
@@ -13,15 +14,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #f59e0b;
+  background: #fffff4;
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.12);
   position: relative;
   z-index: 100;
+  box-sizing: border-box;
 }
 
 .einkaufen-header h1 {
   margin: 0;
-  color: white;
+  color: #ead2a8;
   font-size: 30px;
   text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.15);
 }
@@ -30,7 +32,7 @@
   padding: 9px 20px;
   background: white;
   border-radius: 30px;
-  color: #f59e0b;
+  color: #ead2a8;
   font-size: 22px;
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
 }
@@ -69,9 +71,9 @@
   transform: translateX(-50%);
   padding: 11px 32px;
   background: #fffdf5;
-  border: 5px solid #f59e0b;
+  border: 5px solid #d4ae7b;
   border-radius: 18px;
-  color: #f59e0b;
+  color: #d4ae7b;
   font-size: 27px;
   white-space: nowrap;
   box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
@@ -188,9 +190,11 @@
   border: none;
   background: transparent;
   cursor: pointer;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   transition: transform 0.2s ease;
 }
 
@@ -215,50 +219,84 @@
 .bottom-area {
   position: absolute;
   bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+
   display: flex;
   align-items: flex-end;
-  gap: 10px;
+  gap: 0;
+
   z-index: 65;
+  max-width: 100%;
 }
 
+/* Jana */
+
 .jana-character {
-  width: 140px;
+  width: clamp(300px, 38vw, 520px);
+  flex-shrink: 0;
+
   filter: drop-shadow(0 7px 4px rgba(0, 0, 0, 0.18));
 }
 
 .jana-character img {
   width: 100%;
+  height: auto;
   display: block;
+  object-fit: contain;
 }
+
+/* Shopping cart */
 
 .shopping-cart {
   position: relative;
-  width: 155px;
+  width: clamp(170px, 20.5vw, 280px);
+  flex-shrink: 0;
+
+  margin-left: -35px;
+
   filter: drop-shadow(0 7px 4px rgba(0, 0, 0, 0.18));
 }
 
 .shopping-cart > img {
   width: 100%;
+  height: auto;
   display: block;
+
+  /* خلي العربية باصة ناحية اليمين */
+  transform: scaleX(-1) rotate(10deg);
+  transform-origin: center;
 }
+
+/* Products inside cart */
 
 .cart-items {
   position: absolute;
-  left: 25px;
-  bottom: 35px;
-  width: 105px;
+
+  /* المقاسات متناسبة مع العربية الكبيرة */
+  left: 16%;
+  bottom: 20%;
+  width: 68%;
+
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   gap: 2px;
+
+  /* خلي المنتجات مستقيمة */
+  transform: rotate(-10deg);
+
+  z-index: 2;
+  pointer-events: none;
+  box-sizing: border-box;
 }
 
 .cart-items img {
-  width: 35px;
-  height: 35px;
+  width: 30%;
+  height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: contain;
+
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
 }
 
@@ -294,12 +332,13 @@
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-8px);
   }
 }
 
-/* ========== RESPONSIVE ========== */
+/* ========== RESPONSIVE: LAPTOP ========== */
 
 @media (max-width: 1100px) {
   .supermarket {
@@ -322,13 +361,168 @@
   .shopping-list {
     width: 160px;
   }
+
+  .jana-character {
+    width: clamp(280px, 38vw, 420px);
+  }
+
+  .shopping-cart {
+    width: clamp(155px, 21vw, 230px);
+    margin-left: -25px;
+  }
 }
+
+/* ========== RESPONSIVE: TABLET ========== */
 
 @media (max-width: 900px) {
   .supermarket {
     height: auto;
+    min-height: 850px;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 190px;
+    padding-bottom: 260px;
+  }
+
+  .shelves {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bottom-area {
+    left: 0;
+    bottom: 8px;
+  }
+
+  .jana-character {
+    width: clamp(230px, 38vw, 340px);
+  }
+
+  .shopping-cart {
+    width: clamp(140px, 23vw, 200px);
+    margin-left: -20px;
+  }
+
+  .cart-items {
+    left: 16%;
+    bottom: 20%;
+    width: 68%;
+  }
+}
+
+/* ========== RESPONSIVE: MOBILE ========== */
+
+@media (max-width: 600px) {
+  .einkaufen-header {
+    height: 65px;
+    padding: 0 12px;
+  }
+
+  .einkaufen-header h1 {
+    font-size: 22px;
+  }
+
+  .player-stars {
+    padding: 7px 12px;
+    font-size: 17px;
+  }
+
+  .supermarket {
+    min-height: 900px;
+    padding: 100px 12px 220px;
+    gap: 20px;
+  }
+
+  .supermarket-sign {
+    top: 18px;
+    padding: 8px 18px;
+    font-size: 21px;
+    border-width: 4px;
+  }
+
+  .shopping-list {
+    width: 145px;
+    padding: 20px 12px 14px;
+  }
+
+  .shopping-list h2 {
+    font-size: 20px;
+  }
+
+  .list-item {
+    font-size: 15px;
+    gap: 6px;
+    padding: 6px;
+  }
+
+  .shelves {
+    gap: 10px;
+  }
+
+  .shelf {
+    width: min(43vw, 180px);
+    height: 260px;
+    padding: 5px;
+    border-width: 5px;
+  }
+
+  .product {
+    width: 52px;
+    height: 52px;
+  }
+
+  .bottom-area {
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .jana-character {
+    width: 53vw;
+    max-width: 260px;
+    flex-shrink: 1;
+  }
+
+  .shopping-cart {
+    width: 34vw;
+    max-width: 170px;
+    min-width: 115px;
+    margin-left: -12px;
+    flex-shrink: 1;
+  }
+
+  .cart-items {
+    left: 16%;
+    bottom: 20%;
+    width: 68%;
+    gap: 1px;
+  }
+
+  .cart-items img {
+    width: 30%;
+  }
+
+  .decoration {
+    font-size: 22px;
+  }
+}
+
+/* ========== SMALL MOBILE ========== */
+
+@media (max-width: 380px) {
+  .jana-character {
+    width: 50vw;
+  }
+
+  .shopping-cart {
+    width: 33vw;
+    min-width: 105px;
+    margin-left: -8px;
+  }
+
+  .supermarket {
+    padding-left: 6px;
+    padding-right: 6px;
   }
 }
