@@ -12,7 +12,7 @@
 .toy-room {
   position: absolute;
   left: 50%;
-  top: 10%;
+  top: 60%;
   transform: translate(-50%, -50%);
   width: max(100vw, calc(100vh * 16 / 9));
   height: max(100vh, calc(100vw * 9 / 16));
