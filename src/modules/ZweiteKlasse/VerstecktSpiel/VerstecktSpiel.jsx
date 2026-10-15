@@ -6,8 +6,8 @@ import "./VerstecktSpiel.css";
 import roomBg from "../../../assets/girlroom.jpeg";
 
 import Lama from "../../../assets/lama.webp"
-import Igel from "../../../assets/igel.jpg"
-import Hase from "../../../assets/hase.avif"
+import Igel from "../../../assets/cute-baby-hedgehog-cartoon-on-white-background-free-vector-removebg-preview.png"
+import Hase from "../../../assets/cute-bunny-kids-toy-isolated-white-background-simple-plush-cute-little-baby-rabbit-vector-removebg-preview.png"
 import Puma from "../../../assets/puma.png"
 import Esel from "../../../assets/esel.png"
 

@@ -12,7 +12,7 @@
 .toy-room {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 580PX;
   transform: translate(-50%, -50%);
   width: max(100vw, calc(100vh * 16 / 9));
   height: max(100vh, calc(100vw * 9 / 16));
@@ -90,7 +90,7 @@
 }
 
 .hidden-animal img {
-  width: 100%;
+  width: 80PX;
   height: 100%;
   object-fit: contain;
   pointer-events: none;
