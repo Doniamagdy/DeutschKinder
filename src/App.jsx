@@ -11,6 +11,7 @@ import VerstecktSpiel from "./modules/ZweiteKlasse/VerstecktSpiel/VerstecktSpiel
 
 import ErsteKlasseHome from "./modules/ErsteKlasseHome/ErsteKlasseHome";
  import  ZweiteKlasseHome from "./modules/ZweiteKlasseHome/ZweiteKlasseHome";
+  import Zahlen from "./modules/ErsteKlasse/Zahlen/Zahlen";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
         <Route path="erste-klasse" element={<ErsteKlasseHome />} />
 
         <Route path="zweite-klasse" element={<ZweiteKlasseHome />} />
+
+            <Route path="zahlen" element={<Zahlen />} />
 
       </Route>
     </Routes>
