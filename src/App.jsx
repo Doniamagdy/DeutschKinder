@@ -21,6 +21,8 @@ import Year1List from "./modules/KlassenListe/Year1/Year1List";
 
 import Year2List from "./modules/KlassenListe/Year2/Year2List";
 
+
+import WortBildDomino from "./modules/ZweiteKlasse/WortBildDomino/WortBildDomino";
 function App() {
   return (
     <Routes>
@@ -46,6 +48,10 @@ function App() {
        <Route path="year-1-list" element={<Year1List />} />
 
               <Route path="year-2-list" element={<Year2List />} />
+
+              <Route path="*" element={<h1>404 Not Found</h1>} />
+
+              <Route path="/domino" element={<WortBildDomino />} />
 
 
       </Route>

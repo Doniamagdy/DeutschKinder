@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 import image1 from "../../assets/Screenshot 2026-10-09 100838.png";
 import image2 from "../../assets/Screenshot 2026-10-15 074153.png";
+import image3 from "../../assets/1036609.png";
+
 function ZweiteKlasseHome() {
 const lessons = [
     {
@@ -15,6 +17,12 @@ const lessons = [
       image: image2,
       button: "Verstecktspiel",
       link: "/verstecktspiel",
+    },
+    {
+      title: "Wort-bild Domino",
+      image: image3,
+      button: "Wort-bild Domino",
+      link: "/domino",
     },
    
   ];
