@@ -6,12 +6,20 @@ import Essen from "./modules/ErsteKlasse/Essen/Essen";
 import Einkaufen from "./modules/ErsteKlasse/Einkaufen/Einkaufen";
 import Gedächtnisspiel from "./modules/ErsteKlasse/Gedächtnisspiel/Gedächtnisspiel";
 
-import Spielzeuge from "./modules/ZweiteKlasse/Spielzeuge/Spielzeuge"
+import Spielzeuge from "./modules/ZweiteKlasse/Spielzeuge/Spielzeuge";
 import VerstecktSpiel from "./modules/ZweiteKlasse/VerstecktSpiel/VerstecktSpiel";
 
 import ErsteKlasseHome from "./modules/ErsteKlasseHome/ErsteKlasseHome";
- import  ZweiteKlasseHome from "./modules/ZweiteKlasseHome/ZweiteKlasseHome";
-  import Zahlen from "./modules/ErsteKlasse/Zahlen/Zahlen";
+import ZweiteKlasseHome from "./modules/ZweiteKlasseHome/ZweiteKlasseHome";
+// import Zahlen from "./modules/ErsteKlasse/Zahlen/Zahlen";
+
+import Grade1List from "./modules/KlassenListe/Grade1/Grade1List";
+
+import Grade2List from "./modules/KlassenListe/Grade2/Grade2List";
+
+import Year1List from "./modules/KlassenListe/Year1/Year1List";
+
+import Year2List from "./modules/KlassenListe/Year2/Year2List";
 
 function App() {
   return (
@@ -29,7 +37,16 @@ function App() {
 
         <Route path="zweite-klasse" element={<ZweiteKlasseHome />} />
 
-            <Route path="zahlen" element={<Zahlen />} />
+        {/* <Route path="zahlen" element={<Zahlen />} /> */}
+
+        <Route path="grade-1-list" element={<Grade1List />} />
+
+       <Route path="grade-2-list" element={<Grade2List />} />
+
+       <Route path="year-1-list" element={<Year1List />} />
+
+              <Route path="year-2-list" element={<Year2List />} />
+
 
       </Route>
     </Routes>

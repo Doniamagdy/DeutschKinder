@@ -21,6 +21,26 @@ function Navbar() {
           </span>
         </Link>
 
+
+
+<div className="flex items-center gap-4">
+  <Link to="/grade-1-list" className="text-sm font-semibold text-gray-700 transition-colors duration-200 hover:text-[#F9C74F] sm:text-base lg:text-lg">
+    Grade 1 List
+  </Link>
+  <Link to="/grade-2-list" className="text-sm font-semibold text-gray-700 transition-colors duration-200 hover:text-[#F9C74F] sm:text-base lg:text-lg">
+    Grade 2 List
+  </Link>
+
+  <Link to="/year-1-list" className="text-sm font-semibold text-gray-700 transition-colors duration-200 hover:text-[#F9C74F] sm:text-base lg:text-lg">
+    Year 1 List
+  </Link>
+  <Link to="/year-2-list" className="text-sm font-semibold text-gray-700 transition-colors duration-200 hover:text-[#F9C74F] sm:text-base lg:text-lg">
+    Year 2 List
+  </Link>
+</div>
+
+
+
         {/* Cute right-side illustration */}
         <div className="hidden h-14 w-14 items-center justify-center rounded-full sm:flex lg:h-16 lg:w-16 lg:text-4xl">
           <img src={Flag} alt="Flag" />
