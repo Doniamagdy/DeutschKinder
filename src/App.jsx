@@ -21,6 +21,7 @@ import Year1List from "./modules/KlassenListe/Year1/Year1List";
 
 import Year2List from "./modules/KlassenListe/Year2/Year2List";
 
+import FroschSpiel from "./modules/ErsteKlasse/FroschSpiel/FroschSpiel";
 
 import WortBildDomino from "./modules/ZweiteKlasse/WortBildDomino/WortBildDomino";
 function App() {
@@ -35,25 +36,23 @@ function App() {
         <Route path="gedaechtnisspiel" element={<Gedächtnisspiel />} />
         <Route path="verstecktspiel" element={<VerstecktSpiel />} />
 
+        <Route path="frosch-spiel" element={<FroschSpiel />} />
+
         <Route path="erste-klasse" element={<ErsteKlasseHome />} />
 
         <Route path="zweite-klasse" element={<ZweiteKlasseHome />} />
 
-        {/* <Route path="zahlen" element={<Zahlen />} /> */}
-
         <Route path="grade-1-list" element={<Grade1List />} />
 
-       <Route path="grade-2-list" element={<Grade2List />} />
+        <Route path="grade-2-list" element={<Grade2List />} />
 
-       <Route path="year-1-list" element={<Year1List />} />
+        <Route path="year-1-list" element={<Year1List />} />
 
-              <Route path="year-2-list" element={<Year2List />} />
+        <Route path="year-2-list" element={<Year2List />} />
 
-              <Route path="*" element={<h1>404 Not Found</h1>} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
 
-              <Route path="/domino" element={<WortBildDomino />} />
-
-
+        <Route path="domino" element={<WortBildDomino />} />
       </Route>
     </Routes>
   );

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import image1 from "../../assets/Cartoon Kitchen Game (1).png";
 import image2 from "../../assets/einkaufen.jpg";
 import image3 from "../../assets/childrens-learning-entertaining-cartoon-character-vector-illustration-education-media_1253202-323006.avif";
+import image4 from "../../assets/frog.jpg";
 
 
 function ErsteKlasseHome() {
@@ -25,6 +26,12 @@ function ErsteKlasseHome() {
       image: image3,
       button: "Gedächtnisspiel ",
       link: "/gedaechtnisspiel",
+    },
+      {
+      title: "Frosch Spiel",
+      image: image4,
+      button: "Frosch Spiel ",
+      link: "/frosch-spiel",
     },
   ];
 
