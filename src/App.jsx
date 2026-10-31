@@ -24,6 +24,8 @@ import Year2List from "./modules/KlassenListe/Year2/Year2List";
 import FroschSpiel from "./modules/ErsteKlasse/FroschSpiel/FroschSpiel";
 
 import WortBildDomino from "./modules/ZweiteKlasse/WortBildDomino/WortBildDomino";
+
+import FarbenDragDrop from "./modules/ErsteKlasse/FarbenDragDrop/FarbenDragDrop";
 function App() {
   return (
     <Routes>
@@ -53,6 +55,7 @@ function App() {
         <Route path="*" element={<h1>404 Not Found</h1>} />
 
         <Route path="domino" element={<WortBildDomino />} />
+             <Route path="farben-drag-drop" element={<FarbenDragDrop />} />
       </Route>
     </Routes>
   );

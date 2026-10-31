@@ -4,7 +4,7 @@ import image1 from "../../assets/Cartoon Kitchen Game (1).png";
 import image2 from "../../assets/einkaufen.jpg";
 import image3 from "../../assets/childrens-learning-entertaining-cartoon-character-vector-illustration-education-media_1253202-323006.avif";
 import image4 from "../../assets/frog.jpg";
-
+import image5 from "../../assets/colors.jpg";
 
 function ErsteKlasseHome() {
   const lessons = [
@@ -33,6 +33,13 @@ function ErsteKlasseHome() {
       button: "Frosch Spiel ",
       link: "/frosch-spiel",
     },
+   
+     {
+      title: "Farben Drag & Drop",
+      image: image5,
+      button: "Farben Drag & Drop ",
+      link: "/farben-drag-drop",
+    }
   ];
 
   return (
