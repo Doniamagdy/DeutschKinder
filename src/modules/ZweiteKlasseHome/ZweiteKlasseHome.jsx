@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom"
-import image1 from "../../assets/Screenshot 2026-10-09 100838.png";
+// import image1 from "../../assets/Screenshot 2026-10-09 100838.png";
 import image2 from "../../assets/Screenshot 2026-10-15 074153.png";
 import image3 from "../../assets/1036609.png";
 
 function ZweiteKlasseHome() {
 const lessons = [
-    {
-      title: "Wo ist mein Hase?",
-      image: image1,
+    // {
+    //   title: "Wo ist mein Hase?",
+    //   image: image1,
 
-      button: "Wo ist mein Hase? ",
-      link: "/spielzeuge",
-    },
+    //   button: "Wo ist mein Hase? ",
+    //   link: "/spielzeuge",
+    // },
     {
       title: "Verstecktspiel",
       image: image2,
