@@ -24,6 +24,18 @@ const lessons = [
       button: "Wort-bild Domino",
       link: "/domino",
     },
+     {
+      title: "Dreh das Rad!",
+      image: image3,
+      button: "Dreh das Rad!",
+      link: "/spin-wheel",
+    },
+     {
+      title: "Maze",
+      image: image3,
+      button: "Dreh das Rad!",
+      link: "/maze-game",
+    },
    
   ];
 

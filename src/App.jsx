@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import PublicLayout from "./shared/components/Layout/PublicLayout";
 import Home from "./modules/Home/Home";
@@ -26,6 +26,8 @@ import FroschSpiel from "./modules/ErsteKlasse/FroschSpiel/FroschSpiel";
 import WortBildDomino from "./modules/ZweiteKlasse/WortBildDomino/WortBildDomino";
 
 import FarbenDragDrop from "./modules/ErsteKlasse/FarbenDragDrop/FarbenDragDrop";
+import SpinWheel from "./modules/ZweiteKlasse/SpinWeel/SpinWeel";
+import IslandMazeGame from "./modules/ZweiteKlasse/Islandmazegame/Islandmazegame";
 function App() {
   return (
     <Routes>
@@ -56,6 +58,9 @@ function App() {
 
         <Route path="domino" element={<WortBildDomino />} />
              <Route path="farben-drag-drop" element={<FarbenDragDrop />} />
+        <Route path="spin-wheel" element={<SpinWheel />} />
+                <Route path="maze-game" element={<IslandMazeGame />} />
+
       </Route>
     </Routes>
   );
