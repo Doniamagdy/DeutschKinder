@@ -2,6 +2,8 @@ import { Link } from "react-router-dom"
 // import image1 from "../../assets/Screenshot 2026-10-09 100838.png";
 import image2 from "../../assets/Screenshot 2026-10-15 074153.png";
 import image3 from "../../assets/1036609.png";
+import image4 from "../../assets/spin.png";
+import image5 from "../../assets/pirates.avif";
 
 function ZweiteKlasseHome() {
 const lessons = [
@@ -26,14 +28,14 @@ const lessons = [
     },
      {
       title: "Dreh das Rad!",
-      image: image3,
+      image: image4,
       button: "Dreh das Rad!",
       link: "/spin-wheel",
     },
      {
-      title: "Maze",
-      image: image3,
-      button: "Dreh das Rad!",
+      title: "Der Schatz",
+      image: image5,
+      button: "Der Schatz",
       link: "/maze-game",
     },
    

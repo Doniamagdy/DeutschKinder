@@ -28,6 +28,9 @@ import WortBildDomino from "./modules/ZweiteKlasse/WortBildDomino/WortBildDomino
 import FarbenDragDrop from "./modules/ErsteKlasse/FarbenDragDrop/FarbenDragDrop";
 import SpinWheel from "./modules/ZweiteKlasse/SpinWeel/SpinWeel";
 import IslandMazeGame from "./modules/ZweiteKlasse/Islandmazegame/Islandmazegame";
+
+
+import Ampel from "./modules/Ampel/Ampel";
 function App() {
   return (
     <Routes>
@@ -59,7 +62,8 @@ function App() {
         <Route path="domino" element={<WortBildDomino />} />
              <Route path="farben-drag-drop" element={<FarbenDragDrop />} />
         <Route path="spin-wheel" element={<SpinWheel />} />
-                <Route path="maze-game" element={<IslandMazeGame />} />
+                        <Route path="maze-game" element={<IslandMazeGame />} />
+                        <Route path="ampel" element={<Ampel />} />
 
       </Route>
     </Routes>
